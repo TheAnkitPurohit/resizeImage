@@ -8,7 +8,6 @@ This Python script utilizes the OpenCV library to resize images.
 - [Installation](#installation)
 - [Usage](#usage)
 - [Example](#example)
-- [License](#license)
 
 ## Introduction
 
@@ -20,3 +19,36 @@ Before using the script, ensure you have OpenCV installed. You can install it us
 
 ```bash
 pip install opencv-python
+```
+
+## Usage
+
+To resize an image, run the script with the desired input and output paths, as well as the new size (width, height).
+
+```bash
+python resize_image.py
+```
+
+Make sure to update the following variables in the script according to your requirements:
+
+- input_image_path: Path to the input image file.
+- output_image_path: Path to save the resized image.
+- new_size: Tuple specifying the new dimensions (width, height).
+
+## Example
+
+```bash
+# Specify input and output paths
+input_image_path = "input_image.jpg"
+output_image_path = "output_image_resized.jpg"
+
+# Specify the new size (width, height)
+new_size = (300, 200)
+
+# Resize the image
+resize_image(input_image_path, output_image_path, new_size)
+```
+
+
+
+
